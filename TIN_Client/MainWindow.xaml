@@ -1,0 +1,41 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TIN_Client"
+        xmlns:System="clr-namespace:System;assembly=System.Runtime" x:Class="TIN_Client.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="949" Width="450">
+    <Grid x:Name="StageLobbies" Margin="0,0,0,10">
+        <Label Content="Wybierz/Zmień nazwę&#xA;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="28"/>
+
+        <DataGrid x:Name="DataGridChat" Margin="10,164,10,89" Height="559" AutoGenerateColumns="False" VerticalScrollBarVisibility="Visible"
+                  HeadersVisibility="None"
+                    HorizontalAlignment="Stretch" 
+                    HorizontalContentAlignment="Stretch" IsReadOnly="True" Visibility="Hidden" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding content}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="TextBoxMessage" HorizontalAlignment="Left" Margin="10,729,0,0" Text="Twoja wiadomość" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" Height="20"/>
+        <Button x:Name="ButtonSend" Content="Wyślij" HorizontalAlignment="Left" Margin="389,729,0,0" VerticalAlignment="Top" Width="51" Click="ButtonSend_Click"/>
+        <Button x:Name="ButtonLeave" Content="Opuść Pokój" HorizontalAlignment="Center" Margin="0,754,0,0" VerticalAlignment="Top" Width="430" Click="ButtonLeave_Click"/>
+        <TextBox x:Name="TextBoxSetName" HorizontalAlignment="Left" Margin="10,38,0,0" Text="Twoja_nazwa" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" Height="20"/>
+        <Button x:Name="ButtonSetName" Content="Zatwierdź" HorizontalAlignment="Left" Margin="340,38,0,0" VerticalAlignment="Top" Width="100" Click="ButtonSetName_Click"/>
+        <Label Content="Utwórz pokój&#xA;" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" Height="28"/>
+        <TextBox x:Name="TextBoxCreateRoom" HorizontalAlignment="Left" Margin="10,91,0,0" Text="Nazwa_pokoju" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" Height="20"/>
+        <Button x:Name="ButtonCreateRoom" Content="Utwórz pokój" HorizontalAlignment="Left" Margin="340,91,0,0" VerticalAlignment="Top" Width="100" Click="ButtonCreateRoom_Click"/>
+        <Label Content="Dołącz do istniejącego pokoju&#xA;" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" Height="28"/>
+        <ComboBox x:Name="ComboBoxJoinRoom" HorizontalAlignment="Left" Margin="36,139,0,0" VerticalAlignment="Top" Width="299" Height="20"/>
+        <Button x:Name="ButtonJoinRoom" Content="Dołącz do pokoju" HorizontalAlignment="Left" Margin="340,139,0,0" VerticalAlignment="Top" Width="100" Click="ButtonJoinRoom_Click"/>
+        <Button x:Name="ButtonGetRooms" Content="🗘" HorizontalAlignment="Left" Margin="11,139,0,0" VerticalAlignment="Top" Width="20" Click="ButtonGetRooms_Click"/>
+        <TextBox x:Name="TextBoxChat" HorizontalAlignment="Center" Margin="0,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="430" Height="559" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" IsReadOnly="True"/>
+        <Label Content="Wiadomość prywatna" HorizontalAlignment="Left" Margin="10,779,0,0" VerticalAlignment="Top" Width="144"/>
+        <TextBox x:Name="TextBoxPrivID" HorizontalAlignment="Left" Margin="51,810,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" Height="20"/>
+        <Label Content="Do:" HorizontalAlignment="Left" Margin="10,807,0,0" VerticalAlignment="Top"/>
+        <Label Content="Treść:" HorizontalAlignment="Left" Margin="10,835,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxPrivMsg" HorizontalAlignment="Left" Margin="51,839,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389" Height="20"/>
+        <Button x:Name="ButtonSendPriv" Content="Wyślij wiadomość prywatną" HorizontalAlignment="Center" Margin="0,866,0,0" VerticalAlignment="Top" Width="430" Click="ButtonSendPriv_Click"/>
+    </Grid>
+</Window>

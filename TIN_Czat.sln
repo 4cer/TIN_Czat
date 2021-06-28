@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TIN_Server", "TIN_Server\TIN_Server.csproj", "{FCAD1E11-EE12-445A-AF05-498E6FD08845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TIN_Client", "TIN_Client\TIN_Client.csproj", "{804FB884-E2FC-473C-BE1A-97BAB61E8808}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCAD1E11-EE12-445A-AF05-498E6FD08845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCAD1E11-EE12-445A-AF05-498E6FD08845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCAD1E11-EE12-445A-AF05-498E6FD08845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCAD1E11-EE12-445A-AF05-498E6FD08845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{804FB884-E2FC-473C-BE1A-97BAB61E8808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{804FB884-E2FC-473C-BE1A-97BAB61E8808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{804FB884-E2FC-473C-BE1A-97BAB61E8808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{804FB884-E2FC-473C-BE1A-97BAB61E8808}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C494CCEA-7EA7-483E-9A51-32CF1A9A6742}
+	EndGlobalSection
+EndGlobal
